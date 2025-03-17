@@ -43,7 +43,7 @@ class Calculator:
         new_record = {"operation": operation, "operand1": a, "operand2": b, "result": result}
         self.history = pd.concat([self.history, pd.DataFrame([new_record])], ignore_index=True)
 
-    def save_history(self, file_name="history.csv"):
+    def save_history(self, file_name="/history.csv"):
         self.history.to_csv(file_name, index=False)
         logger.info(f"History saved to {file_name}")
 
@@ -60,9 +60,10 @@ class Calculator:
 
     def load_plugins(self):
         plugin_folder = 'calculator/plugins'
+        print(os.listdir('calculator/plugins'))
         for filename in os.listdir(plugin_folder):
             if filename.endswith('.py') and filename != '__init__.py':
-                plugin_name = filename[:-3] 
+                plugin_name = filename[:-3]  # Strip off '.py'
                 try:
                     module = importlib.import_module(f'calculator.plugins.{plugin_name}')
                     self.plugins[plugin_name] = module
