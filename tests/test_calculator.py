@@ -67,9 +67,9 @@ def test_clear_history(calculator):
 # Test plugin loading
 def test_load_plugins(calculator):
     calculator.load_plugins()
-    assert "sqrt" in calculator.
-    assert "power" in plugins
-    assert "log" in plugins
+    assert "sqrt" in calculator.plugins
+    assert "power" in calculator.plugins
+    assert "log" in calculator.plugins
 
 # Test executing a valid plugin
 def test_execute_plugin_success(calculator):
