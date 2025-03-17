@@ -82,6 +82,7 @@ class Calculator:
         else:
             logger.error(f"Plugin {plugin_name} not found")
         return None
+
     def repl(self):
         logger.info("Starting REPL")
         while True:
