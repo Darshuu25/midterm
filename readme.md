@@ -84,5 +84,5 @@ Implements LBYL and EAFP error-handling strategies:
 [Implementation Link](https://github.com/Darshuu25/midterm/blob/main/calculator/main.py#L66)
 
 ## Video Demonstration
-[Watch Video](https://drive.google.com/file/d/1ttaGz0gkWo2k0YDgnhJrrRLdDpmMdJGj/view?usp=sharing)
+[Watch Video]https://drive.google.com/file/d/1ttaGz0gkWo2k0YDgnhJrrRLdDpmMdJGj/view?usp=sharing
 
